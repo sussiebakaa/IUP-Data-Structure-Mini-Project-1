@@ -3,7 +3,7 @@
 - Name: Vania Aisha Rohmawati
 - NRP: 5025251160
 
-## Perpustakaan Prikitiw
+## Perpustakaan Prikitiw (Test Case)
 Suatu hari di sebuah kota kecil yang tenang, berdirilah sebuah perpustakaan bernama Perpustakaan Prikitiw. Perpustakaan ini sudah berdiri sejak lama dan dikenal warganya sebagai tempat membaca yang nyaman. Namun di balik kenyamanannya, ada satu masalah besar yang selama ini dibiarkan berlarut-larut: semuanya masih dicatat manual di buku tulis.
 Pak Rudi, sang kepala perpustakaan, setiap hari harus berlari-lari kecil ke sana kemari. Di satu sisi ia harus mencatat siapa saja yang sedang mengantri ingin meminjam buku. Di sisi lain, ia perlu mengingat buku mana saja yang baru saja dikembalikan. Belum lagi rak buku yang penataannya kerap berantakan karena tidak ada sistem yang jelas tentang buku mana yang harus diletakkan di depan atau di belakang.
 
@@ -23,3 +23,15 @@ Akhirnya pak Rudi meminta mu untuk membantunya membuat sistem peendokumentasian 
   - Batalkan pencatatan pengembalian buku.
 7. Melihat kondisi keseluruhan sistem
   - Menampilkan daftar buku di rak, antrian peminjam, dan riwayat pengembalian.
+
+## Case Explanation
+Sistem ini dibuat untuk menggantikan pencatatan manual menjadi sistem terstruktur menggunakan:
+- Deque untuk rak buku  
+- Queue untuk antrian peminjam  
+- Stack untuk riwayat pengembalian  
+
+## Implementation
+Program diimplementasikan menggunakan bahasa C++ dengan struktur data:
+- Deque= untuk pengelolaan buku (depan & belakang)  
+- Queue= untuk antrian pengunjung  
+- Stack= untuk undo pengembalian  
