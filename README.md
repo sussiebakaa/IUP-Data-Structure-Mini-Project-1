@@ -1,37 +1,40 @@
 # IUP-Data-Structure-Mini-Project-1
 
 - Name: Vania Aisha Rohmawati
-- NRP: 5025251160
+- Student ID: 5025251160
 
-## Perpustakaan Prikitiw (Test Case)
-Suatu hari di sebuah kota kecil yang tenang, berdirilah sebuah perpustakaan bernama Perpustakaan Prikitiw. Perpustakaan ini sudah berdiri sejak lama dan dikenal warganya sebagai tempat membaca yang nyaman. Namun di balik kenyamanannya, ada satu masalah besar yang selama ini dibiarkan berlarut-larut: semuanya masih dicatat manual di buku tulis.
-Pak Rudi, sang kepala perpustakaan, setiap hari harus berlari-lari kecil ke sana kemari. Di satu sisi ia harus mencatat siapa saja yang sedang mengantri ingin meminjam buku. Di sisi lain, ia perlu mengingat buku mana saja yang baru saja dikembalikan. Belum lagi rak buku yang penataannya kerap berantakan karena tidak ada sistem yang jelas tentang buku mana yang harus diletakkan di depan atau di belakang.
+## Prikitiw Library (Test Case)
+One day in a quiet little town, there stood a library called the Prikitiw Library. This library had been around for a long time and was known by the locals as a comfortable place to read. However, behind its comfort lay a major problem that had been allowed to drag on for too long: everything was still recorded manually in notebooks.
+Mr. Rudi, the library director, has to run back and forth every day. On one hand, he has to keep track of who is waiting in line to borrow books. On the other hand, he needs to remember which books have just been returned. Not to mention the book shelves, which are often in disarray because there is no clear system regarding which books should be placed in front or in the back.
 
-Akhirnya pak Rudi meminta mu untuk membantunya membuat sistem peendokumentasian data peminjaman buku di perpustakaan yang memiliki 7 peirintah:
+Finally, Mr. Rudi asked you to help him create a book borrowing data documentation system for the library, which has 7 commands:
 
-1. Menambahkan buku baru ke rak
-  - Terdapat 2 opsi untuk menambahkan buku, opsi 1 untuk menaruh buku di bagian priority,opsi 2 menaruh buku di bagian reguler.
-2. Meminjamkan buku kepada pengunjung
-  - Mengambil buku dari data buku untuk di pinjamkan ke pengunjung perpustakaan.
-3. Mendaftarkan pengunjung yang ingin meminjam buku ke dalam daftar antrian
-  - Mendata pengunjung yang igin meminjam buku.
-4. Melayani peminjam berikutnya sesuai urutan kedatangan, 
-  - Melayani peminjam dengan urutan sesuai kedatangan siapa yang lebih dulu datang dilayani lebih dulu.
-5 Mencatat setiap buku yang dikembalikan 
-  - Mencatat buku yang dikembalikan oleh pengunjung ke dalam riwayat pengembalian.
-6. Membatalkan (undo) catatan pengembalian terakhir jika terjadi kesalahan input
-  - Batalkan pencatatan pengembalian buku.
-7. Melihat kondisi keseluruhan sistem
-  - Menampilkan daftar buku di rak, antrian peminjam, dan riwayat pengembalian.
+1. Add a new book to the shelf
+  - There are 2 options for adding a book: Option 1 places the book in the priority section, Option 2 places the book in the regular section.
+2. Lend a book to a visitor
+  - Retrieve books from the book database to lend to library visitors.
+3. Register visitors who wish to borrow books into the waiting list
+  - Record visitors who wish to borrow books.
+4. Serve the next borrower in order of arrival, 
+  - Serve borrowers in the order of arrival; whoever arrives first is served first.
+5. Recording every returned book
+  - Recording books returned by visitors in the return history.
+6. Undoing the last return entry if an input error occurs
+  - Undoing the book return entry.
+7. Viewing the overall system status
+  - Displaying the list of books on the shelves, the borrower queue, and the return history.
 
 ## Case Explanation
-Sistem ini dibuat untuk menggantikan pencatatan manual menjadi sistem terstruktur menggunakan:
-- Deque untuk rak buku  
-- Queue untuk antrian peminjam  
-- Stack untuk riwayat pengembalian  
+This system was created to replace manual record-keeping with a structured system using:
+- Deque for the bookshelf  
+- Queue for the borrower queue  
+- A stack for the return history  
 
 ## Implementation
-Program diimplementasikan menggunakan bahasa C++ dengan struktur data:
-- Deque= untuk pengelolaan buku (depan & belakang)  
-- Queue= untuk antrian pengunjung  
-- Stack= untuk undo pengembalian  
+The program is implemented using the C++ language with the following data structures:
+- Deque = for book management (front & back)  
+- Queue = for the visitor queue  
+- Stack = for return undo  
+
+
+Translated with DeepL.com (free version)
